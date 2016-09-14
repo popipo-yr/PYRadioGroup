@@ -69,6 +69,8 @@
             withConfig:(void (^)(UIView *content, UIButton *checkButton, UIView *mainView))configBlock
 {
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview) withObject:nil];
+    
+    _content = content;
     if (content) [self addSubview:content];
     [self addSubview:_checkBtn];
 

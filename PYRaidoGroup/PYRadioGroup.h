@@ -69,6 +69,9 @@
 ///改变单选项状态
 @property (nonatomic, getter = isCheck) BOOL check;
 
+///内容视图
+@property (nonatomic, readonly) UIView* content;
+
 /**
  *  设置内容视图(带有配置回调)
  *
